@@ -69,16 +69,13 @@
     }
 
     .account img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
+      width: 100%; /* Full width of the container */
+      max-height: 200px; /* Limit height */
+      object-fit: contain; /* Ensures the entire image fits without being cut off */
       border-radius: 8px;
+      background-color: #f4f4f9; /* Optional: Adds background for empty spaces */
       transition: transform 0.3s ease;
       cursor: pointer;
-    }
-
-    .account img:hover {
-      transform: scale(1.2);
     }
 
     .account h3 {
@@ -123,6 +120,7 @@
   </style>
 </head>
 <body>
+
   <!-- Background Music -->
   <audio id="background-music" autoplay loop muted>
     <source src="Sofia.mp3" type="audio/mpeg">
